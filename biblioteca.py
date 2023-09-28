@@ -36,7 +36,7 @@ def mediana(n1,n2,n3):
 import random
 import string
 
-def contraseña():
+def generar_contraseña():
     longitud = random.randint(7, 10)  
     contrasena = ''.join(random.choice(string.printable[33:127]) for _ in range(longitud))
     return contrasena
